@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Gamepad2, Github, Mail, Trophy, Twitter, Users, Zap, X } from 'lucide-react';
+import { Gamepad2, Github, Mail, Trophy, Twitter, Users, Zap, X, Sparkles } from 'lucide-react';
 
 // ATENÇÃO: Cole o link do seu webhook do Discord na variável abaixo
 const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1502368637074411580/v7-so-SCTi892XdYBo3y3I8J9KZDe6am669sigoqLEf9INqyj419bRaiH8kHTR1qPYFe";
@@ -21,7 +21,7 @@ export default function App() {
       const time = new Date().toLocaleTimeString('pt-BR');
 
       // Envia os dados para o webhook do Discord
-      if (DISCORD_WEBHOOK_URL !== "https://discord.com/api/webhooks/1502368637074411580/v7-so-SCTi892XdYBo3y3I8J9KZDe6am669sigoqLEf9INqyj419bRaiH8kHTR1qPYFe") {
+      if (DISCORD_WEBHOOK_URL && DISCORD_WEBHOOK_URL !== "COLOQUE_SEU_WEBHOOK_DO_DISCORD_AQUI") {
         await fetch(DISCORD_WEBHOOK_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -53,6 +53,9 @@ export default function App() {
       <header className="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/50">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="text-xl font-bold tracking-tighter flex items-center gap-2">
+            <div className="w-8 h-8 rounded-lg bg-zinc-950 border border-zinc-800 flex items-center justify-center text-white shadow-sm">
+              <Sparkles size={16} />
+            </div>
             <span>Best Condo Games</span>
           </div>
           <nav className="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
