@@ -64,7 +64,7 @@ export default function App() {
             <a href="#contact" className="hover:text-zinc-50 transition-colors">Contact</a>
           </nav>
           <a
-            href="https://discord.gg/xwwf2FHHx"
+            href="https://discord.gg/fznvuHSv"
             target="_blank"
             rel="noreferrer"
             className="px-5 py-2.5 rounded-full bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-zinc-300 transition-colors cursor-pointer"
@@ -126,7 +126,7 @@ export default function App() {
           <p className="text-zinc-400 mb-10 text-lg">
             join the discord server
           </p>
-          <a href="https://discord.gg/xwwf2FHHx" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-zinc-100 text-zinc-950 px-8 py-4 rounded-full font-bold text-lg hover:bg-zinc-300 transition-colors cursor-pointer">
+          <a href="https://discord.gg/fznvuHSv" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-zinc-100 text-zinc-950 px-8 py-4 rounded-full font-bold text-lg hover:bg-zinc-300 transition-colors cursor-pointer">
             <Mail size={20} />
             Join
           </a>
